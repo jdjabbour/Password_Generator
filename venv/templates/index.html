@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Please enter information into the fields.</h1>
+        <form action="{{url_for('result')}}" method="POST">
+        <input title="Please enter the number of characters." placeholder="number"
+               type="number" name="number" required><br><br>
+
+            <input title="Please enter the number of words. " placeholder="charwords" type="number" name="charwords">
+            <br><br>
+
+            <button type="submit"> Submit </button>
+    </div>
+
+</body>
+</html>
